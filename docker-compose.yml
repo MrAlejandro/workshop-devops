@@ -5,7 +5,7 @@ services:
     build:
       context: services/app
       dockerfile: Dockerfile.development
-    command: sh -c "bundle && ./bin/rails s"
+    command: sh -c "./bin/rails s"
     ports:
       - "3000:3000"
     volumes:
