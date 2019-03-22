@@ -1,0 +1,16 @@
+en:
+  articles:
+    index:
+      new: "Create new article"
+    show:
+      back: "Back to list"
+      edit: "Edit article"
+      delete: "Delete article"
+      confirm?: "Are you sure?"
+    article:
+      view: "View article"
+      edit: "Edit article"
+      delete: "Delete article"
+      confirm?: "Are you sure?"
+    edit:
+      back: "Back to article"
