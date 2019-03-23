@@ -1,0 +1,2 @@
+env_database_host: db
+env_database_username: postgres

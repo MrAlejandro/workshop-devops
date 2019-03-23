@@ -10,5 +10,5 @@ app-bash:
 	# docker-compose run --user=$(USER) app bash
 	docker-compose run app bash
 
-app-setup: app-build
+app-setup: ansible-development-setup-env app-build
 	docker-compose run app bin/setup
