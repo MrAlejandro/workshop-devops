@@ -11,4 +11,4 @@ app-bash:
 	docker-compose run app bash
 
 app-setup: app-build
-	docker-compose run app bundle install
+	docker-compose run app bin/setup
