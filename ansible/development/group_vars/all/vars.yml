@@ -1,2 +1,3 @@
 env_database_host: db
 env_database_username: postgres
+app_port: 3000

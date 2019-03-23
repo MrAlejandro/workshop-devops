@@ -10,11 +10,13 @@ services:
     build:
       context: services/app
       dockerfile: Dockerfile.development
-    command: sh -c "rm -f tmp/pids/server.pid && bundle exec bin/rails s"
+    command: sh -c "rm -f tmp/pids/server.pid && bundle exec bin/rails s -p $APP_PORT"
     volumes:
       - "~/.bash_history:/.bash_history"
       - "./services/app:/usr/src/app:cached"
       - "/tmp:/tmp:delegated"
+    expose:
+      - ${APP_PORT}
     depends_on:
       - db
     env_file:
