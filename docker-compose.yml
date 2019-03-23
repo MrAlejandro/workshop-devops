@@ -5,9 +5,9 @@ services:
     build:
       context: services/app
       dockerfile: Dockerfile.development
-    command: sh -c "rm -f tmp/pids/server.pid && bundle exec bin/rails s -b '0.0.0.0' -p 3000"
-    ports:
-      - "3000:3000"
+    command: sh -c "rm -f tmp/pids/server.pid && bundle exec bin/rails s"
+    # ports:
+    #   - "3000:3000"
     volumes:
       - "~/.bash_history:/.bash_history"
       - "./services/app:/usr/src/app:cached"
@@ -18,3 +18,5 @@ services:
       dockerfile: Dockerfile
     ports:
      - "8080:80"
+    depends_on:
+      - app
