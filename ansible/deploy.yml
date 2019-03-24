@@ -1,0 +1,26 @@
+---
+- hosts: all
+  gather_facts: false
+  tasks:
+    - ping:
+
+# - hosts: all
+#   gather_facts: no
+#   vars_prompt:
+#     - name: "blog_image_tag"
+#       prompt: "Blog image tag"
+#       private: no
+
+#   tasks:
+#     - set_fact: blog_image_tag={{ blog_image_tag }}
+#       tags: always
+
+# - hosts: webservers
+#     gather_facts: false
+
+#   tasks:
+#     - name: Create a network
+#       docker_network:
+#         name: "{{ hexlet_basics_docker_network }}"
+
+
