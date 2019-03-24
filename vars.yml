@@ -1,0 +1,3 @@
+rack_env: production
+rails_env: production
+rails_log_to_stdout: null
